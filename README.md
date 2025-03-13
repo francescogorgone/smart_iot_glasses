@@ -12,3 +12,13 @@ In the world, 253 million people live with visual impairments, of which 36 milli
 The aim of this project is to assist visually impaired individuals in navigating their environment by developing a system that enhances their safety during movement. By using a wearable device—such as a pair of glasses—it is possible to receive audio notifications about objects encountered along the way without the need for a companion or conventional aid.
 
 
+## Proposed solution
+
+The project involves using a Raspberry Pi connected to a webcam or camera sensor, along with a pair of earphones. Using the SSD MobileNet object detection model trained on the COCO dataset (over 330,000 images) (Microsoft, 2014), the glasses can associate the detected object with one of 80 object categories (called “classes”).
+At this point, it is necessary to communicate what has been detected. For this purpose, eSpeak was used (eSpeak, 2007), a text-to-speech (TTS) program—that is, a voice synthesis software capable of converting the detected information into words that the user can hear via the earphones connected to the Raspberry Pi. This communication is fundamental to inform the user about the type of object detected and its location. In order to understand where the object is located spatially, the frame (i.e. what the sensor or webcam captures) has been divided into 9 specifically renamed sections.
+
+<img width="1316" alt="stopsign" src="https://github.com/user-attachments/assets/7e98b520-abaf-4d90-83c8-c27d7f89aa4f" />
+
+In this case, the user will hear the TTS communicate the following via the earphones:
+
+### “Stop sign detected with confidence 83% in position top center”
