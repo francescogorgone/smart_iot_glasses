@@ -22,3 +22,28 @@ At this point, it is necessary to communicate what has been detected. For this p
 In this case, the user will hear the TTS communicate the following via the earphones:
 
 ### “Stop sign detected with confidence 83% in position top center”
+
+For the prototyping process, it was decided to use the English language to manage communications, but this can be easily modified according to the needs of the individual user by changing the text strings within the code.
+
+Furthermore, the possibility of sharing this information with a potential companion via a Telegram bot message has also been provided.
+
+<img width="195" alt="commands" src="https://github.com/user-attachments/assets/940a8b5c-a6e5-45e0-89ef-36056e0251c7" />
+
+Through the /start command the bot will begin to periodically inform the user (the time interval between one message and the next can be modified from the respective file) with the exact same information that is
+communicated via TTS since the latter and the bot have access to the same text file in which the readings are transcribed. With the /stop command, however, the bot will notify the user and interrupt communications.
+
+
+<img width="631" alt=" bot_chat" src="https://github.com/user-attachments/assets/999edfb4-493b-4e5d-ab1f-7a9f985c0003" />
+
+
+If that the model fails to associate the identified object with a class, no class will be communicated to the user via TTS, but the presence of an object will still be indicated. The bot, however, will signal the presence of such an object with question marks:
+
+
+<img width="359" alt="unknown_class" src="https://github.com/user-attachments/assets/d72366b7-b0c5-4b46-b512-13f38b4ce7d0" />
+
+
+<br>
+
+
+<img width="372" alt="scheme" src="https://github.com/user-attachments/assets/be075f4b-aa4d-4182-9a10-8b33380bc724" />
+
