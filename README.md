@@ -36,7 +36,7 @@ communicated via TTS since the latter and the bot have access to the same text f
 <img width="631" alt=" bot_chat" src="https://github.com/user-attachments/assets/999edfb4-493b-4e5d-ab1f-7a9f985c0003" />
 
 
-If that the model fails to associate the identified object with a class, no class will be communicated to the user via TTS, but the presence of an object will still be indicated. The bot, however, will signal the presence of such an object with question marks:
+If the model fails to associate the identified object with a class, no class will be communicated to the user via TTS, but the presence of an object will still be indicated. The bot, however, will signal the presence of such an object with question marks:
 
 
 <img width="359" alt="unknown_class" src="https://github.com/user-attachments/assets/d72366b7-b0c5-4b46-b512-13f38b4ce7d0" />
